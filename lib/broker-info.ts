@@ -12,8 +12,8 @@ export const BROKER_INFO = {
   licenseNumber: "WA License # XXXXX",
   /** Email for contact */
   email: "your.email@example.com",
-  /** Phone (optional) */
-  phone: "",
+  /** Phone (optional) — use string so tel: link and .replace() type-check when empty */
+  phone: "" as string,
   /** NWMLS subscriber — set true when you're an NWMLS subscriber */
   nwmlsSubscriber: true,
   /** Short tagline or title (e.g. "Managing Broker", "Realtor®") */
