@@ -1,4 +1,4 @@
-# Newsletter & Email — AFH WABO Prep
+# Newsletter & Email — AFH WABO Prep by DIY
 
 Use the copy below for a newsletter issue and a promotional email. Replace [YOUR_URL], [YOUR_NAME], [UNSUBSCRIBE_LINK], and [YOUR_CTA] with your details.
 
@@ -21,7 +21,7 @@ Hi,
 
 If you’re converting a single-family home in **Lewis, Thurston, or Pierce County (WA)** into an **Adult Family Home (6 beds)**, you need to pass a **local Building Official inspection** before DSHS licensing.
 
-**AFH WABO Prep** helps you do that in one flow:
+**AFH WABO Prep by DIY** helps you do that in one flow:
 
 1. **Entry Mode** — Enter property data (rooms, doors, windows, stairs, site). Export CSV/JSON.
 2. **2D/3D Drawing** — Generate a floor plan and isometric from that data. Export SVG for your permit packet.
@@ -49,7 +49,7 @@ Manual & tutorial: [YOUR_URL] (see README, QUICKSTART, docs/MANUAL, docs/TUTORIA
 **Subject line options:**  
 - Get your AFH inspection packet ready in one place  
 - 2D/3D floor plans for your AFH permit (Lewis, Thurston, Pierce WA)  
-- AFH WABO Prep: Entry Mode → drawing → permit packet  
+- AFH WABO Prep by DIY: Entry Mode → drawing → permit packet  
 
 **Preview text:**  
 Single-family → 6-bed AFH. Entry Mode, 2D/3D drawing, Centralia packet. [YOUR_URL]
@@ -61,7 +61,7 @@ Hi,
 
 Turning a **single-family home** in Lewis, Thurston, or Pierce County into a **6-bed AFH**? You need the right **data, drawings, and permit packet** for the local Building Official.
 
-**AFH WABO Prep** gives you:
+**AFH WABO Prep by DIY** gives you:
 
 - **Entry Mode** — Rooms, doors, windows, stairs, site. Export CSV/JSON.  
 - **2D/3D Drawing** — Floor plan + isometric from your data. Export SVG.  
@@ -82,7 +82,7 @@ Turning a **single-family home** in Lewis, Thurston, or Pierce County into a **6
 
 - [ ] Replace [YOUR_URL] with app or landing page  
 - [ ] Replace [YOUR_NAME] with sender name  
-- [ ] Replace [YOUR_CTA] with button/link text (e.g. “Open AFH WABO Prep”, “Try free”)  
+- [ ] Replace [YOUR_CTA] with button/link text (e.g. “Open AFH WABO Prep by DIY”, “Try free”)  
 - [ ] Add [UNSUBSCRIBE_LINK] and privacy/contact links  
 - [ ] Optional: one hero image (screenshot of Drawing or Entry Mode)  
 - [ ] A/B test subject lines  

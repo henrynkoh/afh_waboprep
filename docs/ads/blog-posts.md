@@ -1,4 +1,4 @@
-# Blog Posts — Blogger, Naver Blog, Tistory, WordPress
+# Blog Posts — Blogger, Naver Blog, Tistory, WordPress (AFH WABO Prep by DIY)
 
 Use the content below as article body. Adapt title and intro per platform. Replace [YOUR_URL] and [YOUR_CTA] with your link and call-to-action.
 
@@ -23,8 +23,8 @@ If you’re turning a single-family home in Lewis, Thurston, or Pierce County in
 - A clear path from “as-is” to “to-be” 6-bed AFH  
 - A permit packet that matches your city (e.g. Centralia) checklist  
 
-**How AFH WABO Prep helps**  
-AFH WABO Prep is a free, open app that lets you:
+**How AFH WABO Prep by DIY helps**  
+AFH WABO Prep by DIY is a free, open app that lets you:
 
 1. **Entry Mode** — Enter case meta, rooms, doors, windows, stairs, and site. Export CSV/JSON for your own workflow or AI tools.  
 2. **2D/3D Drawing** — Generate a 2D floor plan and 3D isometric from that data. Export SVG for your permit packet.  
@@ -63,8 +63,8 @@ Entry Mode 데이터, 2D/3D 도면, AI 에이전트로 워싱턴 주 AFH 건축 
 - as-is → to-be 6베드 AFH 설계  
 - 시청(예: Centralia) 체크리스트에 맞는 허가 패킷  
 
-**AFH WABO Prep이 하는 일**  
-AFH WABO Prep은 다음을 한 곳에서 할 수 있게 해 줍니다.
+**AFH WABO Prep by DIY가 하는 일**  
+AFH WABO Prep by DIY는 다음을 한 곳에서 할 수 있게 해 줍니다.
 
 1. **Entry Mode** — 케이스 메타, 방, 문, 창, 계단, 대지 입력. CSV/JSON 내보내기.  
 2. **2D/3D 도면** — 입력 데이터로 2D 평면도·3D 아이소메트릭 생성. SVG 내보내기(허가 패킷용).  

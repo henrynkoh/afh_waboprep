@@ -1,4 +1,4 @@
-# AFH WABO Prep — Documentation
+# AFH WABO Prep by DIY — Documentation
 
 | Doc | Description |
 |-----|-------------|

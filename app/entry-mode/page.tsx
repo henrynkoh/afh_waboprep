@@ -47,6 +47,46 @@ export default function EntryModePage() {
     existingAdditionsSheds: "yes/no",
   });
 
+  const [autofillQuery, setAutofillQuery] = useState("");
+  const [autofillLoading, setAutofillLoading] = useState(false);
+  const [autofillError, setAutofillError] = useState<string | null>(null);
+  const [autofillMessage, setAutofillMessage] = useState<string | null>(null);
+
+  const runAutofill = async () => {
+    const query = autofillQuery.trim();
+    if (!query) {
+      setAutofillError("Enter an MLS number or address.");
+      return;
+    }
+    setAutofillError(null);
+    setAutofillMessage(null);
+    setAutofillLoading(true);
+    try {
+      const res = await fetch(`/api/lookup-property?q=${encodeURIComponent(query)}`);
+      const data = await res.json();
+      if (!res.ok) {
+        setAutofillError(data.error ?? "Lookup failed.");
+        return;
+      }
+      if (data.caseMeta) {
+        setCaseMeta((prev) => ({ ...prev, ...data.caseMeta }));
+      }
+      if (data.site) {
+        setSite((prev) => ({ ...prev, ...data.site }));
+      }
+      if (data.rooms?.length) {
+        setRooms(data.rooms);
+      }
+      if (data.message) {
+        setAutofillMessage(data.message);
+      }
+    } catch {
+      setAutofillError("Lookup failed. Try again.");
+    } finally {
+      setAutofillLoading(false);
+    }
+  };
+
   const updateCase = (k: keyof CaseMeta, v: string | number) =>
     setCaseMeta((p) => ({ ...p, [k]: v }));
 
@@ -97,6 +137,41 @@ export default function EntryModePage() {
           Case meta, rooms, doors, windows, stairs/ramps, site. Export CSV/JSON for pipeline.
         </p>
       </div>
+
+      <section className="rounded-xl border border-slate-700 bg-slate-800/60 p-5">
+        <h2 className="text-lg font-semibold text-sky-300 mb-2">Autofill from MLS or address</h2>
+        <p className="text-slate-400 text-sm mb-3">
+          Enter an MLS number or full address to fill Case Meta (and Site/Rooms when available).
+        </p>
+        <div className="flex flex-wrap gap-3 items-end">
+          <label className="flex-1 min-w-[200px] flex flex-col gap-1">
+            <span className="text-slate-400 text-sm">MLS number or address</span>
+            <input
+              type="text"
+              value={autofillQuery}
+              onChange={(e) => { setAutofillQuery(e.target.value); setAutofillError(null); setAutofillMessage(null); }}
+              onKeyDown={(e) => e.key === "Enter" && runAutofill()}
+              placeholder="e.g. 2606 Cooks Hill Rd, Centralia, WA or MLS #"
+              className="rounded bg-slate-900 border border-slate-600 px-3 py-2 text-white placeholder-slate-500"
+              disabled={autofillLoading}
+            />
+          </label>
+          <button
+            type="button"
+            onClick={runAutofill}
+            disabled={autofillLoading}
+            className="rounded-lg bg-sky-600 px-4 py-2 text-white hover:bg-sky-500 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {autofillLoading ? "Looking up…" : "Autofill"}
+          </button>
+        </div>
+        {autofillError && (
+          <p className="mt-2 text-sm text-amber-400" role="alert">{autofillError}</p>
+        )}
+        {autofillMessage && !autofillError && (
+          <p className="mt-2 text-sm text-sky-300" role="status">{autofillMessage}</p>
+        )}
+      </section>
 
       <section className="rounded-xl border border-slate-700 bg-slate-800/60 p-5">
         <h2 className="text-lg font-semibold text-sky-300 mb-4">1-A. Case Meta</h2>

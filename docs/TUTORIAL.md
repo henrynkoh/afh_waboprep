@@ -1,4 +1,4 @@
-# AFH WABO Prep — Step-by-Step Tutorial
+# AFH WABO Prep by DIY — Step-by-Step Tutorial
 
 This tutorial walks you through one complete flow: from installing the app to exporting a 2D/3D drawing and preparing the pipeline for a permit packet.
 

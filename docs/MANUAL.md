@@ -1,12 +1,12 @@
-# AFH WABO Prep — User Manual
+# AFH WABO Prep by DIY — User Manual
 
-This manual describes every feature of the AFH WABO Prep app and how to use it.
+This manual describes every feature of the AFH WABO Prep by DIY app and how to use it.
 
 ---
 
 ## 1. Overview
 
-**AFH WABO Prep** helps you:
+**AFH WABO Prep by DIY** helps you:
 
 - Enter property data (Entry Mode) for a single-family home in Lewis, Thurston, or Pierce County (WA).
 - Generate 2D floor plans and 3D isometric drawings from that data.
@@ -21,6 +21,10 @@ This manual describes every feature of the AFH WABO Prep app and how to use it.
 ## 2. Entry Mode
 
 **Path:** `/entry-mode`
+
+### 2.0 Autofill from MLS or address
+
+- At the top of Entry Mode, use **MLS number or address** and click **Autofill** to fill Case Meta (and Site/Rooms when a listing is found). Set `MLS_API_KEY` in `.env.local` for real MLS data; see [MLS-API-SETUP.md](MLS-API-SETUP.md).
 
 ### 2.1 Case Meta
 

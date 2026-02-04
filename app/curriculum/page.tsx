@@ -1,8 +1,9 @@
 import { CURRICULUM_WEEKS } from "@/lib/curriculum";
+import { SITE_CONFIG } from "@/lib/broker-info";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Curriculum — AFH WABO Prep",
+  title: `Curriculum — ${SITE_CONFIG.appName}`,
   description: "8-week consultant curriculum: AFH Initial Inspection Prep (WAC, DSHS 15-604, floor plan → isometric → packet).",
 };
 

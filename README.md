@@ -1,4 +1,4 @@
-# AFH WABO Prep
+# AFH WABO Prep by DIY
 
 Next.js app for **finding single-family homes in Lewis, Thurston, and Pierce counties (WA)**, converting them to **WABO-ready Adult Family Homes (6 beds)**, and **passing local Building Official initial inspection** as part of DSHS AFH license application.
 
@@ -52,7 +52,7 @@ git init
 git remote add origin git@github.com:henrynkoh/afh_waboprep.git
 git add .
 git status
-git commit -m "AFH WABO Prep: Next.js app, Entry Mode, Drawing 2D/3D, Pipeline, Curriculum, Q&A, Centralia packet, landing page"
+git commit -m "AFH WABO Prep by DIY: Next.js app, Entry Mode, Drawing 2D/3D, Pipeline, Curriculum, Q&A, Centralia packet, landing page"
 git branch -M main
 git push -u origin main
 ```

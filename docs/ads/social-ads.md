@@ -1,4 +1,4 @@
-# Social Ads — Facebook, Instagram, Threads
+# Social Ads — Facebook, Instagram, Threads (AFH WABO Prep by DIY)
 
 Use the copy below for paid or organic posts. Adjust character limits per platform and add your link/CTA.
 
@@ -14,7 +14,7 @@ Use the copy below for paid or organic posts. Adjust character limits per platfo
 `Find a single-family home in Lewis, Thurston & Pierce counties, convert to a 6-bed WABO-ready AFH, and pass local Building Official inspection. Entry Mode → 2D/3D drawing → permit packet.`
 
 **Primary text (long, ~250 chars):**  
-`Turn a single-family home in Lewis, Thurston, or Pierce County (WA) into a WABO-ready Adult Family Home (6 beds) and get your initial Building Official inspection passed. AFH WABO Prep gives you Entry Mode forms, 2D/3D floor plans, AI-agent pipeline prompts, and Centralia packet templates. Quick start → [YOUR_URL]`
+`Turn a single-family home in Lewis, Thurston, or Pierce County (WA) into a WABO-ready Adult Family Home (6 beds) and get your initial Building Official inspection passed. AFH WABO Prep by DIY gives you Entry Mode forms, 2D/3D floor plans, AI-agent pipeline prompts, and Centralia packet templates. Quick start → [YOUR_URL]`
 
 **CTA button:** Learn More / Sign Up  
 **Link:** [YOUR_URL]
@@ -45,7 +45,7 @@ Use the copy below for paid or organic posts. Adjust character limits per platfo
 
 **Post (500 chars max, ~280 for punchy):**  
 `Turn a single-family home in Lewis, Thurston, or Pierce County (WA) into a WABO-ready 6-bed Adult Family Home and pass local Building Official inspection.  
-AFH WABO Prep: Entry Mode → 2D/3D drawing → AI pipeline → Centralia packet.  
+AFH WABO Prep by DIY: Entry Mode → 2D/3D drawing → AI pipeline → Centralia packet.  
 Quick start: [YOUR_URL]`
 
 **Short version (~140 chars):**  

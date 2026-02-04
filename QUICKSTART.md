@@ -1,4 +1,4 @@
-# AFH WABO Prep — Quick Start
+# AFH WABO Prep by DIY — Quick Start
 
 Get the app running and generate your first 2D/3D drawing in under 5 minutes.
 

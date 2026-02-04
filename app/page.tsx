@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { SITE_CONFIG } from "@/lib/broker-info";
 
 // GitHub repo URL (landing page bottom-right link)
 const GITHUB_REPO_URL = "https://github.com/henrynkoh/afh_waboprep";
@@ -42,7 +43,7 @@ export default function Home() {
         <div className="flex h-full flex-col">
           <div className="border-b border-slate-700/80 px-4 py-4">
             <Link href="/" className="text-lg font-bold tracking-tight text-white">
-              AFH <span className="text-sky-400">WABO</span> Prep
+              {SITE_CONFIG.appName}
             </Link>
           </div>
           <nav className="flex-1 overflow-y-auto px-2 py-4">
@@ -82,7 +83,7 @@ export default function Home() {
           </div>
           <div className="relative mx-auto max-w-4xl">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
-              Welcome to <span className="text-sky-400">AFH WABO Prep</span>
+              Welcome to <span className="text-sky-400">{SITE_CONFIG.appName}</span>
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-slate-300 sm:text-xl">
               One-stop portal for AFH development: Entry Mode data, 2D/3D floor plans, inspection prep, permit packet assembly, and tip sheets for Lewis, Thurston & Pierce counties (WA). Find a single-family home, convert to a WABO-ready 6-bed Adult Family Home, and pass local Building Official initial inspection for DSHS AFH license.
@@ -369,7 +370,7 @@ moltbot agent --message "Start case: ..." --thinking high`}
         <section id="jurisdictions" className="scroll-mt-20 border-b border-slate-700/60 bg-slate-900/50 px-6 py-16 sm:px-10">
           <div className="mx-auto max-w-5xl">
             <h2 className="mb-2 text-2xl font-bold text-white sm:text-3xl">Participating Jurisdictions</h2>
-            <p className="mb-10 text-slate-400">AFH WABO Prep supports permit and inspection prep for single-family home conversions to Adult Family Homes in the following counties and cities. Building officials and permit requirements may vary by jurisdiction; use WABO to find your local official and confirm checklist requirements.</p>
+            <p className="mb-10 text-slate-400">{SITE_CONFIG.appName} supports permit and inspection prep for single-family home conversions to Adult Family Homes in the following counties and cities. Building officials and permit requirements may vary by jurisdiction; use WABO to find your local official and confirm checklist requirements.</p>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               <div className="rounded-xl border border-slate-700 bg-slate-800/60 p-5">
                 <h3 className="mb-3 font-semibold text-sky-300">Counties</h3>
@@ -458,7 +459,7 @@ moltbot agent --message "Start case: ..." --thinking high`}
           <div className="mx-auto max-w-5xl">
             <h2 className="mb-6 text-2xl font-bold text-white sm:text-3xl">View, Request, or Cancel an Inspection</h2>
             <p className="mb-8 text-slate-400">
-              Use your jurisdiction&apos;s portal (e.g. <a href="https://www.mybuildingpermit.com/" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:underline">MyBuildingPermit.com</a>) to view, request, or cancel building permit inspections. Before scheduling, prepare with AFH WABO Prep: <Link href="/entry-mode" className="text-sky-400 hover:underline">Entry Mode</Link>, <Link href="/drawing" className="text-sky-400 hover:underline">2D/3D Drawing</Link>, and <Link href="/centralia" className="text-sky-400 hover:underline">Centralia Packet</Link>.
+              Use your jurisdiction&apos;s portal (e.g. <a href="https://www.mybuildingpermit.com/" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:underline">MyBuildingPermit.com</a>) to view, request, or cancel building permit inspections. Before scheduling, prepare with {SITE_CONFIG.appName}: <Link href="/entry-mode" className="text-sky-400 hover:underline">Entry Mode</Link>, <Link href="/drawing" className="text-sky-400 hover:underline">2D/3D Drawing</Link>, and <Link href="/centralia" className="text-sky-400 hover:underline">Centralia Packet</Link>.
             </p>
 
             <div className="space-y-8 rounded-xl border border-slate-600 bg-slate-800/60 p-6">
