@@ -69,7 +69,7 @@ export default function RootLayout({
                 )}
                 {BROKER_INFO.email && BROKER_INFO.phone && " · "}
                 {BROKER_INFO.phone && (
-                  <a href={`tel:${BROKER_INFO.phone.replace(/\D/g, "")}`} className="text-sky-400 hover:underline">
+                  <a href={`tel:${String(BROKER_INFO.phone).replace(/\D/g, "")}`} className="text-sky-400 hover:underline">
                     {BROKER_INFO.phone}
                   </a>
                 )}
